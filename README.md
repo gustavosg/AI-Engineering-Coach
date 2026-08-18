@@ -95,6 +95,8 @@ Then install the generated `.vsix` (see below).
 
 ### Install the built VSIX
 
+#### On Visual Studio Code 
+
 **macOS / Linux**
 
 ```bash
@@ -107,7 +109,21 @@ code --install-extension ai-engineer-coach-*.vsix
 code --install-extension (Get-ChildItem . -Filter 'ai-engineer-coach-*.vsix' | Select-Object -First 1).FullName
 ```
 
-If the CLI does not work, install it from the VS Code UI: press `Ctrl+Shift+P`, type **Install from VSIX**, then browse to the `.vsix` file and select it.
+#### On Cursor
+
+**macOS / Linux**
+
+```bash
+code --install-extension ai-engineer-coach-*.vsix
+```
+
+**Windows / PowerShell**
+
+```powershell
+cursor --install-extension (Get-ChildItem . -Filter 'ai-engineer-coach-*.vsix' | Select-Object -First 1).FullName
+```
+
+If the CLI does not work, install it from the Cursor UI: press `Ctrl+Shift+P`, type **Install from VSIX**, then browse to the `.vsix` file and select it.
 
 After install:
 
